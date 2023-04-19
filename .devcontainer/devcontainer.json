@@ -13,15 +13,14 @@
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-	// "workspaceMount": "source=${localWorkspaceFolder},target=/src/app,type=bind",
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip install --user -r requirements.txt py",
-	"postAttachCommand": "pip install --user docutils Markdown parso pytest pytest-json-report pytest-metadata pytest-sugar PyYAML redbaron typer",
+	"postCreateCommand": "pip install --user -r requirements.txt",
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-python.python"
+				"ms-python.python",
+				"eamodio.gitlens"
 			],
 			"settings": {
 				"python.testing.pytestEnabled": true,
